@@ -1,0 +1,8 @@
+# AdvancedHeal V1.0.0 by GamerMJay, licensed under Apache License 2.0!
+#######
+
+# Messages
+no-permission: "§c§lAdvancedHeal §r§8» §cyou have no permission!"
+run-ingame: "§c§lAdvancedHeal §r§8» §crun this command ingame!"
+heal-message: "§c§lAdvancedHeal §r§8» §a You have been successfully healed"
+feed-message: "§c§lAdvancedHeal §r§8» §a Your hunger has been filled"
