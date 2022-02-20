@@ -1,6 +1,6 @@
 <?php
 
-namespace GamerMJay\BetterGameMode;
+namespace GamerMJay\AdvancedHeal;
 
 #pocketmine
 use GamerMJay\AdvancedHeal\commands\heal;
