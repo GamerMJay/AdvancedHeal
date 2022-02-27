@@ -1,30 +1,22 @@
 [![Discord](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/RuF5gxRNfQ)
 # AdvancedHeal - V1.0.0  
 
-#### New
-
-### TODOs
-
 ### Report Bug
 You've found a Bug?
 - Go to [Issues](https://github.com/GamerMJay/AdvancedHeal/issues)
 - Click on [New Issue](https://github.com/GamerMJay/AdvancedHeal/issues/new/choose)
-- Write your bug with all Informations that you have down
+- Describe your Bug in detail and provide necessary information
 
 ### Commands
 |**Command**|**Description**|
 |-----------|---------------|
-|`/heal`|heal you|
+|`/heal`|heals you|
 |`/feed`|feed you|
 
 ### License:
 This Plugin has the [Apache License 2.0](/LICENSE)! Plugin by GamerMJay!
 
-### Helpers:
-Owner: GamerMJay (https://github.com/GamerMJay)
-
-Helper: ()
-
-Icon: ()
+### Credits:
+Owner: [GamerMJay](https://github.com/GamerMJay)
 
 Discord-Tag: `GamerMJay#6158`
