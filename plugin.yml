@@ -1,13 +1,10 @@
 name: AdvancedHeal
 main: GamerMJay\AdvancedHeal\Main
-author: GamerMJay
 api: 4.0.0
-description: Easy Healing and Feed plugin
-version: 1.0.0
-website: https://github.com/GamerMJay/AdvancedHeal
-
+version: 0.2
+author: GamerMJay
 permissions:
-  heal.use:
-    default: op
-  feed.use:
-    default: op
+ heal.use:
+  default: op
+ feed.use:
+  default: op

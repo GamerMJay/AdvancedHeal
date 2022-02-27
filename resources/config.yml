@@ -2,7 +2,11 @@
 #######
 
 # Messages
+heal: heal
+description1: heal you
+feed: feed
+description2: feed you
 no-permission: "§c§lAdvancedHeal §r§8» §cyou have no permission!"
-run-ingame: "§c§lAdvancedHeal §r§8» "§crun this command ingame!"
-heal-message: "§c§lAdvancedHeal §r§8» "§aYou have been successfully healed"
-feed-message: "§c§lAdvancedHeal §r§8» "§aYour hunger has been filled"
+run-ingame: "§c§lAdvancedHeal §r§8» §crun this command ingame!"
+heal-message: "§c§lAdvancedHeal §r§8» §ayou have been healed"
+feed-message: "§c§lAdvancedHeal §r§8» §aYour hunger has been satisfied"

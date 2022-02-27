@@ -3,8 +3,8 @@
 namespace GamerMJay\AdvancedHeal;
 
 #pocketmine
-use GamerMJay\AdvancedHeal\commands\heal;
 use GamerMJay\AdvancedHeal\commands\feed;
+use GamerMJay\AdvancedHeal\commands\heal;
 use pocketmine\command\Command;
 use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
@@ -19,8 +19,7 @@ class Main extends PluginBase {
 
     public function onEnable(): void {
         $this->saveResource("config.yml");
-        $this->config = new Config($this->getDataFolder() . "config.yml", 2);
-        $this->getServer()->getCommandMap()->register("gm0", new gm0($this));
-        $this->getServer()->getCommandMap()->register("gm1", new gm1($this));
+        $this->getServer()->getCommandMap()->register("feed", new feed($this));
+        $this->getServer()->getCommandMap()->register("heal", new heal($this));
     }
 }

@@ -12,13 +12,13 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\plugin\PluginOwned;
 use pocketmine\utils\Config;
 
-class heal extends Command implements PluginOwned
+class feed extends Command implements PluginOwned
 {
     public function __construct(Main $plugin)
     {
 		$this->plugin = $plugin;
-		parent::__construct($this->plugin->getConfig()->get("heal"), $this->plugin->getConfig()->get("description1"), "/heal", [""]);
-        $this->setPermission("heal.use");
+		parent::__construct($this->plugin->getConfig()->get("feed"), $this->plugin->getConfig()->get("description2"), "/heal", [""]);
+        $this->setPermission("feed.use");
         $this->plugin = $plugin;
     }
     public function execute(CommandSender $player, string $commandLabel, array $args)
@@ -27,12 +27,13 @@ class heal extends Command implements PluginOwned
             $player->sendMessage($config->get("run-ingame"));
             return false;
         }
-        if(!$player->hasPermission("heal.use")){
+        if(!$player->hasPermission("feed.use")){
             $player->sendMessage($config->get("no-permission"));
             return false;
         }
-        $player->setHealth($player->getMaxHealth());
-        $player->sendMessage($this->plugin->getConfig()->get("heal-message"));
+        $player->getHungerManager()->setFood(20);
+        $player->getHungerManager()->setSaturation(20);
+        $player->sendMessage($this->plugin->getConfig()->get("feed-message"));
     }
 
     public function getOwningPlugin(): Plugin
