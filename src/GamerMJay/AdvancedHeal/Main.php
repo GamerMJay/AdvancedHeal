@@ -2,24 +2,19 @@
 
 namespace GamerMJay\AdvancedHeal;
 
-#pocketmine
-use GamerMJay\AdvancedHeal\commands\feed;
-use GamerMJay\AdvancedHeal\commands\heal;
-use pocketmine\command\Command;
-use pocketmine\event\Listener;
+use GamerMJay\AdvancedHeal\command\FeedCommand;
+use GamerMJay\AdvancedHeal\command\HealCommand;
 use pocketmine\plugin\PluginBase;
-use pocketmine\tile\Tile;
 use pocketmine\utils\Config;
-use pocketmine\utils\TextFormat;
-use pocketmine\Server;
-use pocketmine\player\Player;
 
 class Main extends PluginBase {
-    public $config;
+
+    public Config $config;
 
     public function onEnable(): void {
-        $this->saveResource("config.yml");
-        $this->getServer()->getCommandMap()->register("feed", new feed($this));
-        $this->getServer()->getCommandMap()->register("heal", new heal($this));
+        $this->saveDefaultConfig();
+        $this->config = $this->getConfig();
+        $this->getServer()->getCommandMap()->register("advancedheal", new FeedCommand($this));
+        $this->getServer()->getCommandMap()->register("advancedheal", new HealCommand($this));
     }
 }
