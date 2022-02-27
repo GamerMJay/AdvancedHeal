@@ -18,7 +18,7 @@ You've found a Bug?
 |`/feed`|feed you|
 
 ### License:
-This Plugin has the [Apache License 2.0](/LICENSE)! Plugin by GamerMJay2008!
+This Plugin has the [Apache License 2.0](/LICENSE)! Plugin by GamerMJay!
 
 ### Helpers:
 Owner: GamerMJay (https://github.com/GamerMJay)
