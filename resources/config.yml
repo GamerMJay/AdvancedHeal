@@ -2,10 +2,10 @@
 #######
 
 # Messages
-heal: healCommand
-heal-description: healCommand you
-feed: feedCommand
-feed-description: feedCommand you
+heal: heal
+heal-description: 'heal you'
+feed: feed
+feed-description: 'feed you'
 
 run-ingame: "§c§lAdvancedHeal §r§8» §crun this command ingame!"
 heal-message: "§c§lAdvancedHeal §r§8» §ayou have been healed"
