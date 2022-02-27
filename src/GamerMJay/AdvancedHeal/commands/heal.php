@@ -24,11 +24,11 @@ class heal extends Command implements PluginOwned
     public function execute(CommandSender $player, string $commandLabel, array $args)
     {
         if(!$player instanceof Player){
-            $player->sendMessage($config->get("run-ingame"));
+            $player->sendMessage($this->plugin->getConfig()->get("run-ingame"));
             return false;
         }
         if(!$player->hasPermission("heal.use")){
-            $player->sendMessage($config->get("no-permission"));
+            $player->sendMessage($this->plugin->getConfig()->get("no-permission"));
             return false;
         }
         $player->setHealth($player->getMaxHealth());
