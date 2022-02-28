@@ -17,7 +17,7 @@ class heal extends Command implements PluginOwned
     public function __construct(Main $plugin)
     {
 		$this->plugin = $plugin;
-		parent::__construct($this->plugin->getConfig()->get("heal"), $this->plugin->getConfig()->get("description1"), "/heal", [""]);
+		parent::__construct($this->plugin->getConfig()->get("heal"), $this->plugin->getConfig()->get("description"), "/heal", [""]);
         $this->setPermission("heal.use");
         $this->plugin = $plugin;
     }
