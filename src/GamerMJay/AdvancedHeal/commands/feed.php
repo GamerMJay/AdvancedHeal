@@ -17,7 +17,7 @@ class feed extends Command implements PluginOwned
     public function __construct(Main $plugin)
     {
 		$this->plugin = $plugin;
-		parent::__construct($this->plugin->getConfig()->get("feed"), $this->plugin->getConfig()->get("description2"), "/heal", [""]);
+		parent::__construct($this->plugin->getConfig()->get("feed"), $this->plugin->getConfig()->get("description1"), "/feed", [""]);
         $this->setPermission("feed.use");
         $this->plugin = $plugin;
     }
@@ -32,7 +32,7 @@ class feed extends Command implements PluginOwned
             return false;
         }
         $player->getHungerManager()->setFood(20);
-        $player->getHungerManager()->setSaturation(20);
+        $player->getHungerManager()->setSaturation(20);        
         $player->sendMessage($this->plugin->getConfig()->get("feed-message"));
     }
 
