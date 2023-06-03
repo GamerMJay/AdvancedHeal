@@ -1,17 +1,17 @@
-# AdvancedHeal V1.0.0 by GamerMJay, licensed under Apache License 2.0
+# AdvancedHeal V1.1.0 by GamerMJay, licensed under Apache License 2.0
 #######
 
 # heal
   heal: "heal"
-  description: "Heal yourself"
-  noPermission: "§c§lAdvancedHeal §r§8» §cYou have no permission!"
-  heal-message: "§c§lAdvancedHeal §r§8» §aYou have been healed"
+  heal-description: "Heal yourself"
+  noPermission: "§c§lAdvancedHeal §r§8» §You don't have permission."
+  heal-message: "§c§lAdvancedHeal §r§8» §aYou have been healed."
   
 # feed
   feed: "feed"
-  description1: "Feed yourself"
-  noPermission: "§c§lAdvancedHeal §r§8» §cYou have no permission!"
-  feed-message: "§c§lAdvancedHeal §r§8» §aYour hunger has been satisfied"
+  feed-description: "Feed yourself"
+  noPermission: "§c§lAdvancedHeal §r§8» §cYou don't have permission."
+  feed-message: "§c§lAdvancedHeal §r§8» §aYour hunger has been satisfied."
 
 # run ingame
   run-ingame: "§c§lAdvancedHeal §r§8» §crun this command ingame!"

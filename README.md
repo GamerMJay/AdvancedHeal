@@ -1,5 +1,8 @@
 [![Discord](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/RuF5gxRNfQ)
-# AdvancedHeal - V1.0.0  
+# AdvancedHeal - V1.1.0 
+
+#### New
+Updated to PM5
 
 ### Report Bug
 You've found a Bug?
@@ -17,6 +20,6 @@ You've found a Bug?
 This Plugin has the [Apache License 2.0](/LICENSE)! Plugin by GamerMJay!
 
 ### Credits:
-Owner: [GamerMJay](https://github.com/GamerMJay)
+[GamerMJay](https://github.com/GamerMJay)
 
 Discord-Tag: `GamerMJay#6158`

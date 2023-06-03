@@ -14,10 +14,12 @@ use pocketmine\utils\Config;
 
 class feed extends Command implements PluginOwned
 {
+    private $plugin;
+
     public function __construct(Main $plugin)
     {
 		$this->plugin = $plugin;
-		parent::__construct($this->plugin->getConfig()->get("feed"), $this->plugin->getConfig()->get("description1"), "/feed", [""]);
+		parent::__construct($this->plugin->getConfig()->get("feed"), $this->plugin->getConfig()->get("feed-description"), "/feed", [""]);
         $this->setPermission("feed.use");
         $this->plugin = $plugin;
     }

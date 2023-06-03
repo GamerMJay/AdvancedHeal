@@ -14,10 +14,12 @@ use pocketmine\utils\Config;
 
 class heal extends Command implements PluginOwned
 {
+    private $plugin;
+
     public function __construct(Main $plugin)
     {
 		$this->plugin = $plugin;
-		parent::__construct($this->plugin->getConfig()->get("heal"), $this->plugin->getConfig()->get("description"), "/heal", [""]);
+		parent::__construct($this->plugin->getConfig()->get("heal"), $this->plugin->getConfig()->get("heal-description"), "/heal", [""]);
         $this->setPermission("heal.use");
         $this->plugin = $plugin;
     }
